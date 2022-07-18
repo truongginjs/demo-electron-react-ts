@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Main from './components/main/Main';
+import MainLayout from './layouts/mainLayout';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Main/>
+    <MainLayout title='Hello'>
+      <Main/>
+    </MainLayout>
   </React.StrictMode>
 );
 
